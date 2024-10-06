@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INAML</title>
+    <title>INAML - A Journey of Connection</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body class="indexBody" oncontextmenu=" return disableRightClick();">
-    <div class="parent-1">   <!--Parent div tag-->
+    <!-- Background Music -->
+    <audio id="background-music" loop autoplay>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
-        <!--Actual WebDevelopment Starts here-->
-        <div class="element">
-      <header>
-        <h1>INAML</h1>
-    </header>
+    <!-- Parent div tag -->
+    <div class="parent-1">
+
+        <!-- Header Section -->
+        <header class="animated-header">
+            <h1>INAML</h1>
+            <p>“A special bond that transcends distance and time”</p>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Memories</a>
+            <a href="#">Poems</a>
+            <a href="#">Messages</a>
+            <a href="#" id="mute-button" onclick="toggleMute()">Mute Music <i class="fas fa-volume-mute"></i></a>
+        </nav>
+
+        <br><br><br>
+
+         <!-- Countdown Timer Section -->
+         <div class="countup" id="countup1">
+            <span class="timeel years">00</span>
+            <span class="timeel timeRefYears">years</span>
+            <span class="timeel days">00</span>
+            <span class="timeel timeRefDays">days</span>
+            <span class="timeel hours">00</span>
+            <span class="timeel timeRefHours">hours</span>
+            <span class="timeel minutes">00</span>
+            <span class="timeel timeRefMinutes">minutes</span>
+            <span class="timeel seconds">00</span>
+            <span class="timeel timeRefSeconds">seconds</span>
         </div>
-    <nav>
-        <a href="index.html">Home</a>
 
-
-
-
-    </nav>
-
-    <br><br><br>
-
-
-
-        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="font-size: 50px; text-align: center;">
-            It's been so long since I first spoke with <b>INAML</b>
+        <!-- Thoughtful Message Section -->
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded heartfelt-message">
+            It's been so long since I first spoke with <b>INAML</b>. Every day feels like a beautiful journey, filled with emotions and cherished memories. This page is a testament to those memories, to the late-night conversations, shared laughter, and deep connections that have only grown stronger. The moments we've shared have become an essential part of my life. Thank you for being you.
         </div>
 
-    <br><br><br>
+        <!-- Thoughtful Quote Section -->
+        <div class="quote-section">
+            <blockquote>
+                “In every lifetime, I will find you. There’s a bond so strong that distance, time, or life itself can never weaken it.”
+            </blockquote>
+            <p>- Dedicated to you, <b>INAML</b></p>
+        </div>
 
+    </div> <!-- Parent div tag -->
 
-    <div class="countup" id="countup1">
-        <span class="timeel years">00</span>
-        <span class="timeel timeRefYears">years</span>
-        <span class="timeel days">00</span>
-        <span class="timeel timeRefDays">days</span>
-        <span class="timeel hours">00</span>
-        <span class="timeel timeRefHours">hours</span>
-        <span class="timeel minutes">00</span>
-        <span class="timeel timeRefMinutes">minutes</span>
-        <span class="timeel seconds">00</span>
-        <span class="timeel timeRefSeconds">seconds</span>
-    </div>
+    <script src="script.js"></script>
+</body>
 
-      
-
-
-    </div>  <!--Parent div tag-->
-
-      <script src="script.js"></script>
-     </body>
 </html>
