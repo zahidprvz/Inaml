@@ -4,6 +4,7 @@
     background-size: cover;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0; /* Added to remove default body margin */
 }
 
 /* Header Styling */
@@ -98,6 +99,153 @@ nav a:hover {
     color: #f5eaea;
 }
 
+/* Section Styling */
+main {
+    padding: 20px;
+}
+
+/* Section Headings */
+main h2 {
+    font-size: 40px;
+    color: #e8c152; /* Matches header color */
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Paragraphs in Sections */
+main p {
+    font-size: 20px;
+    color: #ffffff; /* Ensures text is readable on dark background */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 20px;
+}
+
+/* Memory List */
+#memories ul {
+    list-style-type: none; /* Removes default list styles */
+    padding-left: 0; /* Removes left padding */
+}
+
+#memories li {
+    background: rgba(255, 255, 255, 0.1); /* Adds slight background to list items */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0; /* Adds space between list items */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 60px; /* Adjusts heading size for medium screens */
+    }
+    
+    header p {
+        font-size: 24px; /* Adjusts paragraph size for medium screens */
+    }
+    
+    nav a {
+        font-size: 18px; /* Adjusts navigation link size */
+        padding: 15px; /* Adjusts padding */
+    }
+    
+    .quote-section {
+        width: 80%; /* Adjusts width for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 50px; /* Further reduces heading size for smaller screens */
+    }
+
+    header p {
+        font-size: 20px; /* Further reduces paragraph size */
+    }
+
+    nav {
+        display: flex; /* Makes nav more flexible */
+        flex-direction: column; /* Stacks nav links vertically */
+        padding: 10px; /* Adds padding */
+    }
+
+    nav a {
+        padding: 10px; /* Adjusts padding for vertical nav */
+    }
+
+    main h2 {
+        font-size: 36px; /* Adjusts heading size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    main h2 {
+        font-size: 30px; /* Adjusts heading size for smaller screens */
+    }
+    
+    main p {
+        font-size: 18px; /* Adjusts paragraph size for smaller screens */
+    }
+    
+    #memories li {
+        font-size: 18px; /* Adjusts memory item size for smaller screens */
+    }
+
+    header {
+        padding: 15px; /* Reduces padding for smaller screens */
+    }
+
+    .heartfelt-message {
+        font-size: 24px; /* Reduces heartfelt message size */
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 40px; /* Smaller heading for mobile */
+    }
+
+    header p {
+        font-size: 18px; /* Smaller paragraph for mobile */
+    }
+
+    nav a {
+        font-size: 16px; /* Smaller nav links */
+        padding: 8px; /* Adjusted padding */
+    }
+
+    main {
+        padding: 10px; /* Reduces padding */
+    }
+
+    main h2 {
+        font-size: 28px; /* Further reduced heading size */
+    }
+
+    main p {
+        font-size: 16px; /* Further reduced paragraph size */
+    }
+
+    #memories li {
+        padding: 10px; /* Adjusts padding for memory items */
+    }
+
+    .quote-section {
+        font-size: 20px; /* Reduces font size for quotes */
+        width: 90%; /* Wider on mobile */
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding for mobile */
+    }
+}
+
 /* Animations */
 @keyframes pulse {
     0%, 100% {
@@ -123,5 +271,34 @@ nav a:hover {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Additional Responsiveness */
+@media (max-width: 450px) {
+    header {
+        padding: 10px; /* Less padding for very small screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stacking links for very small screens */
+    }
+
+    nav a {
+        font-size: 14px; /* Smaller font for mobile nav */
+        padding: 5px; /* Smaller padding */
+    }
+
+    .heartfelt-message, .countup {
+        font-size: 20px; /* Smaller sizes for messages and counts */
+    }
+    
+    .countup .timeel {
+        font-size: 14px; /* Smaller size for time elements */
+    }
+
+    #memories li {
+        font-size: 16px; /* Further reduces memory item size */
+        padding: 8px; /* Further reduce padding */
     }
 }
